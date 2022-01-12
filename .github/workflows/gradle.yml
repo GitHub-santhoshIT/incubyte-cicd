@@ -15,7 +15,7 @@ jobs:
           java-version: 17
           distribution: 'adopt'
       - name: Build with Gradle
-        run: ./gradlew build --scan
+        run: ./gradlew build 
   build-with-setup-java-cache:
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +27,7 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - name: Build with Gradle
-        run: ./gradlew build --scan --no-daemon
+        run: ./gradlew test
   build-with-gradle-build-action-cache:
     runs-on: ubuntu-latest
     steps:
@@ -51,9 +51,9 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - name: Build with Gradle
-        run: ./gradlew build --scan --no-daemon
+        run: ./gradlew run
       - name: Archive test report
         uses: actions/upload-artifact@v2
         with:
           name: Test report
-          path: build/reports/tests/test
+          path: build/test/run/test
