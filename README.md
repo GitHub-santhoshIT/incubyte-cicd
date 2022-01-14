@@ -3,7 +3,7 @@
 ### Application Details
 
 This is a simple Micronaut application that makes requests to a REST API and returns the response.
-The server is available [here](https://61bdb57a2a1dd4001708a0f3.mockapi.io/api/v1/stocks) which serves list of Penny Stocks.
+The server is available [HCC](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/HCC), [TATAMOTORS](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/TATAMOTORS) which serves list of Penny Stocks.
 
 The application is able to get stock information from this API based on a ticker name sent as a query parameter.
 
@@ -32,3 +32,9 @@ The source code for the application along with the test cases is available in th
   "price": 99
 }
 ```
+
+### Live Version
+
+[HCC](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/HCC)
+[TATAMOTORS](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/TATAMOTORS)
+
