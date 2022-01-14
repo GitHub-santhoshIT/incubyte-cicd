@@ -23,8 +23,8 @@ class StockIntegrationTest {
   @Test
   void ticker_search_should_return_stock_info() {
     Stock stock = httpClient.toBlocking()
-        .retrieve(GET("/HCC"), Argument.of(Stock.class), Argument.of(Exception.class));
-    assertEquals("HCC", stock.getTicker());
+        .retrieve(GET("/TATAMOTORS"), Argument.of(Stock.class), Argument.of(Exception.class));
+    assertEquals("TATAMOTORS", stock.getTicker());
   }
 
   @Test
