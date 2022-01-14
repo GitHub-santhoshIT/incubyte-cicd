@@ -13,11 +13,11 @@ import java.util.List;
 public class StockGateway {
 
   @Inject
-  @Client("https://61bdb57a2a1dd4001708a0f3.mockapi.io/api/v1")
+  @Client("https://61e1684c63f8fc0017618baa.mockapi.io/tickers")
   private HttpClient httpClient;
 
   public List<Stock> getAllStocks() {
     return httpClient.toBlocking()
-        .retrieve(GET("/stocks"), Argument.listOf(Stock.class));
+        .retrieve(GET("/TATAMOTORS","/HCC"), Argument.listOf(Stock.class));
   }
 }
