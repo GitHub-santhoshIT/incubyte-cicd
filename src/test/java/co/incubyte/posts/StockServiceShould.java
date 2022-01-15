@@ -23,7 +23,7 @@ class StockServiceShould {
 
   private List<Stock> buildMockStockList() {
     Stock s1 = new Stock("TATAMOTORS", "TATA MOTORS Limited", 99);
-    Stock s2 = new Stock("paytm", "PAYTM LIMITED", 123);
+    Stock s2 = new Stock("HCC", "Hindustan Construction Company Limited", 65.0);
     return List.of(s1, s2);
   }
 
