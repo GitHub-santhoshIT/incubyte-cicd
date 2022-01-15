@@ -38,3 +38,6 @@ The source code for the application along with the test cases is available in th
 [HCC](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/HCC)
 [TATAMOTORS](https://61e1684c63f8fc0017618baa.mockapi.io/tickers/TATAMOTORS)
 
+
+
+[Test report.zip](https://github.com/GitHub-santhoshIT/incubyte-cicd/files/7875081/Test.report.zip)
