@@ -18,6 +18,6 @@ public class StockGateway {
 
   public List<Stock> getAllStocks() {
     return httpClient.toBlocking()
-        .retrieve(GET("/TATAMOTORS /HCC"), Argument.listOf(Stock.class));
+        .retrieve(GET("/TATAMOTORS"), Argument.listOf(Stock.class));
   }
 }
